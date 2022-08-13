@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+folder="zsh"
+DOTFILES=$HOME/personal/dotfiles/main
+
+pushd $DOTFILES
+echo "stow $folder"
+stow -D $folder
+stow $folder --target=$HOME
+
+popd
