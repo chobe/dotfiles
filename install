@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 
-folder="zsh"
+folder=(bin nvim tmux uwuntu zsh)
 DOTFILES=$HOME/personal/dotfiles/main
 
 pushd $DOTFILES
-echo "stow $folder"
-stow -D $folder
-stow $folder --target=$HOME
+
+for i in "${folder[@]}"
+do
+  echo "stow $i"
+  stow -D $i
+  stow $i --target=$HOME
+done
 
 popd
