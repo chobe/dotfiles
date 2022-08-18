@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-folder=(bin nvim tmux uwuntu zsh)
+folder=(bin tmux uwuntu zsh)
 DOTFILES=$HOME/personal/dotfiles
 
 pushd $DOTFILES
