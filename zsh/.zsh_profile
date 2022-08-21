@@ -1,5 +1,5 @@
 # pnpm
-export PATH="$PNPM_HOME:$PATH"
+export PNPM_HOME="/home/chobe/.local/share/pnpm"
 
 export XDG_CONFIG_HOME=$HOME/.config
 VIM="nvim"
@@ -15,6 +15,7 @@ export DOTFILES=$PERSONAL/dotfiles/main
 
 addToPathFront $HOME/.local/bin
 addToPathFront $PNPM_HOME
+addToPathFront /usr/local/go/bin
 
 bindkey -s ^f "tmux-sessionizer\n"
 
